@@ -1454,7 +1454,19 @@ Hãy đặt câu hỏi liên quan đến nội dung môn học để chúng ta b
 // Trả về file index.html từ thư mục dist đối với bất kỳ URL nào không khớp với API routes,
 // giúp xử lý điều hướng trang của Single Page Application ở phía Client.
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  const filePath = path.join(__dirname, 'dist', 'index.html');
+  res.sendFile(filePath, (err) => {
+    if (err) {
+      console.error("Lỗi gửi file index.html (Có thể do chưa build dự án):", err.message);
+      res.status(404).send(`
+        <div style="font-family: system-ui, sans-serif; text-align: center; padding: 50px;">
+          <h2 style="color: #ff4757;">⚠️ Không tìm thấy tệp tin giao diện (Index.html)</h2>
+          <p>Hệ thống Express Server đã chạy trực tuyến, nhưng thư mục build tĩnh <strong>dist</strong> chưa được tạo ra trên Render.</p>
+          <p style="color: #57606f;">Vui lòng kiểm tra xem bạn đã cấu hình <strong>Build Command</strong> trên Render là <code>npm install && npm run build</code> chưa nhé!</p>
+        </div>
+      `);
+    }
+  });
 });
 
 // ----------------------------------------------------
