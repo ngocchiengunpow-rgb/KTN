@@ -1,0 +1,137 @@
+/* News, Scientific Research (NCKH) & Graduation Thesis (KLTN) styles */
+
+/* News Dashboard Grid */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.news-title {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.news-summary {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.news-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+  font-size: 12px;
+}
+
+.news-author {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.news-readmore-btn {
+  color: var(--vmu-navy);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.news-readmore-btn:hover {
+  color: var(--vmu-navy-light);
+}
+
+/* NCKH & KLTN Layout */
+.portal-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .portal-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.portal-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.portal-item-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-left: 4px solid var(--border-color);
+}
+
+.portal-item-card.approved {
+  border-left-color: var(--color-success);
+}
+
+.portal-item-card.under-review {
+  border-left-color: var(--color-warning);
+}
+
+.portal-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.portal-item-title {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.portal-item-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 8px;
+  font-size: 12.5px;
+  color: var(--text-secondary);
+}
+
+.portal-item-abstract {
+  font-size: 13px;
+  color: var(--text-secondary);
+  background: var(--bg-primary);
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  line-height: 1.6;
+}
+
+.portal-form-sticky {
+  position: sticky;
+  top: 32px;
+}

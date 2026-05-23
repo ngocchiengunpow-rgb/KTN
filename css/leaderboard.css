@@ -1,0 +1,153 @@
+/* Leaderboard Page layout */
+.leaderboard-filters-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.leaderboard-table-card {
+  overflow: hidden;
+  padding: 0;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.leaderboard-table th {
+  background: rgba(var(--vmu-navy-rgb), 0.02);
+  padding: 16px 24px;
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.leaderboard-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 14.5px;
+  color: var(--text-primary);
+  vertical-align: middle;
+}
+
+.leaderboard-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.leaderboard-table tbody tr {
+  transition: background var(--transition-fast);
+}
+
+.leaderboard-table tbody tr:hover {
+  background: rgba(var(--vmu-navy-rgb), 0.01);
+}
+
+.leaderboard-table tbody tr.current-user-row {
+  background: rgba(255, 184, 0, 0.06);
+}
+
+.leaderboard-table tbody tr.current-user-row td {
+  font-weight: 600;
+  border-top: 1px dashed rgba(255, 184, 0, 0.4);
+  border-bottom: 1px dashed rgba(255, 184, 0, 0.4);
+}
+
+/* Rank Standings styling */
+.rank-badge-item {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-family: var(--font-title);
+  font-size: 14px;
+}
+
+.rank-badge-item.gold {
+  background: var(--vmu-gold-light);
+  color: var(--vmu-gold-dark);
+  border: 1px solid var(--vmu-gold);
+}
+
+.rank-badge-item.silver {
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+}
+
+.rank-badge-item.bronze {
+  background: #ffedd5;
+  color: #c2410c;
+  border: 1px solid #fed7aa;
+}
+
+.rank-badge-item.standard {
+  background: transparent;
+  color: var(--text-muted);
+}
+
+/* User standing profile details */
+.leaderboard-user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.leaderboard-user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border-color);
+  object-fit: cover;
+}
+
+.leaderboard-user-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.leaderboard-user-msv {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+/* XP Value badge */
+.xp-score-badge {
+  font-family: var(--font-title);
+  font-weight: 800;
+  color: var(--vmu-navy);
+  font-size: 15px;
+}
+
+.xp-score-badge span {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-left: 2px;
+}
+
+/* level/badges text custom highlights */
+.rank-badge-text {
+  font-weight: 700;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.rank-text-newbie { background: rgba(100, 116, 139, 0.1); color: var(--rank-newbie); }
+.rank-text-scholar { background: rgba(14, 165, 233, 0.1); color: var(--rank-scholar); }
+.rank-text-expert { background: rgba(16, 185, 129, 0.1); color: var(--rank-expert); }
+.rank-text-researcher { background: rgba(139, 92, 246, 0.1); color: var(--rank-researcher); }
+.rank-text-outstanding { background: rgba(255, 184, 0, 0.15); color: var(--vmu-gold-dark); }

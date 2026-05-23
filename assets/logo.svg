@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003087" />
+      <stop offset="100%" stop-color="#001C54" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FF9900" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#003087" stop-opacity="0.1" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Ship Anchor & Globe Icon (VMU Inspired) -->
+  <g transform="translate(10, 10)" filter="url(#shadow)">
+    <!-- Globe Grid Backing -->
+    <circle cx="50" cy="50" r="42" fill="url(#navyGrad)" />
+    <circle cx="50" cy="50" r="42" stroke="url(#goldGrad)" stroke-width="1.5" fill="none" opacity="0.3" />
+    
+    <!-- Longitude/Latitude Lines -->
+    <ellipse cx="50" cy="50" rx="42" ry="16" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.25" />
+    <ellipse cx="50" cy="50" rx="16" ry="42" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.25" />
+    <line x1="50" y1="8" x2="50" y2="92" stroke="#ffffff" stroke-width="0.75" opacity="0.25" />
+    <line x1="8" y1="50" x2="92" y2="50" stroke="#ffffff" stroke-width="0.75" opacity="0.25" />
+
+    <!-- Ship Anchor (Gold) -->
+    <path d="M 50 16 L 50 72 
+             M 42 26 L 58 26 
+             M 50 72 C 32 72 26 54 26 48
+             M 50 72 C 68 72 74 54 74 48
+             M 22 50 L 26 48 L 30 52
+             M 78 50 L 74 48 L 70 52" 
+          stroke="url(#goldGrad)" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <circle cx="50" cy="18" r="5" fill="none" stroke="url(#goldGrad)" stroke-width="3" />
+    
+    <!-- Graduation Cap Overlay -->
+    <path d="M 32 38 L 50 30 L 68 38 L 50 46 Z" fill="url(#goldGrad)" />
+    <path d="M 42 42 L 42 50 C 42 54 58 54 58 50 L 58 42" fill="none" stroke="url(#goldGrad)" stroke-width="2" />
+    <!-- Tassel -->
+    <path d="M 68 38 L 72 48 L 72 52" fill="none" stroke="url(#goldGrad)" stroke-width="1.2" stroke-linecap="round" />
+    <circle cx="72" cy="53" r="1.5" fill="#FF9900" />
+  </g>
+
+  <!-- Typography: VimEdu and Subtitle -->
+  <g transform="translate(125, 0)">
+    <!-- "Vim" (Navy Blue) -->
+    <text x="0" y="65" font-family="'Outfit', 'Inter', 'Segoe UI', sans-serif" font-weight="900" font-size="44" fill="#003087" letter-spacing="-0.5">Vim</text>
+    
+    <!-- "Edu" (Gold) -->
+    <text x="80" y="65" font-family="'Outfit', 'Inter', 'Segoe UI', sans-serif" font-weight="900" font-size="44" fill="url(#goldGrad)" letter-spacing="-0.5">Edu</text>
+    
+    <!-- Outer Trade Flag Pill -->
+    <rect x="178" y="32" width="62" height="20" rx="6" fill="#EBF3FF" />
+    <text x="186" y="46" font-family="'Inter', sans-serif" font-weight="700" font-size="10" fill="#003087" letter-spacing="0.5">KTNT</text>
+
+    <!-- Subtitle (Academic tag) -->
+    <text x="0" y="88" font-family="'Inter', 'Segoe UI', sans-serif" font-weight="600" font-size="12" fill="#64748B" letter-spacing="1.5">LEARNING ASSISTANCE PLATFORM</text>
+    
+    <!-- Border bottom accent -->
+    <line x1="0" y1="102" x2="330" y2="102" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>

@@ -1,0 +1,207 @@
+/* Documents Center */
+.docs-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .docs-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.docs-folder-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.docs-folder-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  background: var(--bg-surface);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-align: left;
+}
+
+.docs-folder-item:hover, .docs-folder-item.active {
+  border-color: var(--vmu-navy);
+  background: rgba(var(--vmu-navy-rgb), 0.04);
+}
+
+.docs-folder-item.active {
+  font-weight: 700;
+  color: var(--vmu-navy);
+}
+
+.docs-folder-item svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--text-muted);
+  stroke-width: 2;
+  fill: none;
+}
+
+.docs-folder-item.active svg {
+  stroke: var(--vmu-navy);
+}
+
+.docs-files-card {
+  padding: 0;
+}
+
+.docs-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.docs-table th {
+  padding: 16px 24px;
+  background: rgba(var(--vmu-navy-rgb), 0.02);
+  border-bottom: 1px solid var(--border-color);
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 13.5px;
+}
+
+.docs-table td {
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 14px;
+}
+
+.docs-table tr:last-child td {
+  border-bottom: none;
+}
+
+.doc-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.doc-icon-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.doc-icon-badge.pdf { background: #ef4444; }
+.doc-icon-badge.docx { background: #3b82f6; }
+.doc-icon-badge.xlsx { background: #10b981; }
+.doc-icon-badge.pptx { background: #f97316; }
+
+.doc-title-text {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.doc-category-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.doc-download-btn {
+  color: var(--vmu-navy);
+  font-weight: 600;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.doc-download-btn:hover {
+  color: var(--vmu-navy-light);
+  text-decoration: underline;
+}
+
+/* Studocu Bypass Helper Styles */
+.studocu-helper-banner {
+  background: linear-gradient(135deg, #2a52be 0%, #1a3c8f 100%);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  margin-bottom: 24px;
+}
+
+.studocu-helper-banner h2 {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.studocu-helper-banner p {
+  opacity: 0.9;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.studocu-step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.studocu-step-card {
+  padding: 24px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.studocu-step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--vmu-gold-light);
+  color: var(--vmu-gold-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-family: var(--font-title);
+}
+
+.studocu-step-title {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+.studocu-step-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.studocu-step-desc code {
+  background: var(--bg-primary);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-danger);
+}

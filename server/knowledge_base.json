@@ -1,0 +1,164 @@
+[
+  {
+    "subjectCode": "21005",
+    "chapter": "Chương 3: Lý thuyết Cầu, Cung và Hệ số Co giãn",
+    "tags": ["co giãn", "cầu", "giá", "doanh thu", "elasticity", "edp"],
+    "citation": "Giáo trình Kinh tế vi mô - Chương 3, Trang 68",
+    "textbook": "Giáo trình Kinh tế vi mô",
+    "page": "68",
+    "content": "Hệ số co giãn của cầu theo giá (EDp) đo lường mức độ phản ứng của lượng cầu hàng hóa trước sự thay đổi của giá cả hàng hóa đó, trong điều kiện các yếu tố khác không đổi. Công thức tính hệ số co giãn điểm là EDp = (% thay đổi lượng cầu) / (% thay đổi giá) = (dQ/dP) * (P/Q). Khi cầu co giãn nhiều (|EDp| > 1), việc giảm giá bán sẽ làm tăng tổng doanh thu (TR = P * Q) vì tỷ lệ % tăng của sản lượng lớn hơn tỷ lệ % giảm của giá. Ngược lại, khi cầu co giãn ít (|EDp| < 1), doanh nghiệp nên tăng giá bán để tăng tổng doanh thu."
+  },
+  {
+    "subjectCode": "21005",
+    "chapter": "Chương 3: Lý thuyết Cầu, Cung và Hệ số Co giãn",
+    "tags": ["co giãn chéo", "thay thế", "bổ sung", "độc lập", "exy"],
+    "citation": "Giáo trình Kinh tế vi mô - Chương 3, Trang 74",
+    "textbook": "Giáo trình Kinh tế vi mô",
+    "page": "74",
+    "content": "Hệ số co giãn chéo của cầu (Exy) đo lường sự thay đổi trong lượng cầu của hàng hóa X khi giá của hàng hóa Y thay đổi. Công thức: Exy = (% thay đổi lượng cầu hàng hóa X) / (% thay đổi giá hàng hóa Y). Dấu của Exy xác định mối quan hệ giữa hai sản phẩm: Nếu Exy > 0, hai sản phẩm là thay thế cho nhau (ví dụ: trà và cà phê, khi giá trà tăng, người tiêu dùng chuyển sang mua cà phê nhiều hơn). Nếu Exy < 0, hai sản phẩm là bổ sung cho nhau (ví dụ: xăng và xe máy, giá xăng tăng làm giảm lượng cầu xe máy). Nếu Exy = 0, hai sản phẩm độc lập tuyệt đối với nhau."
+  },
+  {
+    "subjectCode": "21005",
+    "chapter": "Chương 5: Thị trường Độc quyền Hoàn toàn",
+    "tags": ["độc quyền", "tối đa hóa lợi nhuận", "monopoly", "mr=mc", "chi phí biên", "doanh thu biên"],
+    "citation": "Giáo trình Kinh tế vi mô - Chương 5, Trang 142",
+    "textbook": "Giáo trình Kinh tế vi mô",
+    "page": "142",
+    "content": "Doanh nghiệp độc quyền hoàn toàn là người bán duy nhất trên thị trường đối với sản phẩm không có hàng hóa thay thế gần gũi. Để tối đa hóa lợi nhuận, doanh nghiệp độc quyền sẽ sản xuất tại mức sản lượng Q* tại đó doanh thu biên bằng chi phí biên (MR = MC). Điểm giá bán độc quyền P* sẽ được xác định bằng cách dóng mức sản lượng Q* lên đường cầu thị trường D. Do đường cầu dốc xuống nên doanh thu biên luôn nhỏ hơn giá bán ở mọi mức sản lượng (MR < P). Do đó, tại điểm tối ưu, giá bán độc quyền luôn lớn hơn chi phí biên (P* > MC), tạo ra phần mất không (DWL) cho xã hội."
+  },
+  {
+    "subjectCode": "21005",
+    "chapter": "Chương 7: Thất bại thị trường và Vai trò của Chính phủ",
+    "tags": ["ngoại ứng", "thất bại thị trường", "hàng hóa công cộng", "chính phủ"],
+    "citation": "Giáo trình Kinh tế vi mô - Chương 7, Trang 210",
+    "textbook": "Giáo trình Kinh tế vi mô",
+    "page": "210",
+    "content": "Thất bại thị trường xảy ra khi cơ chế thị trường tự do không thể phân bổ nguồn lực một cách tối ưu và hiệu quả. Một trong các nguyên nhân hàng đầu là ngoại ứng (externality) - tác động của hoạt động sản xuất hoặc tiêu dùng của một thực thể lên bên thứ ba mà không được phản ánh vào giá cả thị trường. Ngoại ứng tiêu cực (như ô nhiễm môi trường) dẫn đến sản lượng thực tế lớn hơn sản lượng tối ưu xã hội; chính phủ có thể đánh thuế (thuế Pigou) để nội bộ hóa ngoại ứng. Ngoại ứng tích cực (như giáo dục, tiêm chủng) dẫn đến sản lượng thực tế nhỏ hơn tối ưu xã hội; chính phủ giải quyết bằng cách trợ cấp."
+  },
+  {
+    "subjectCode": "15635",
+    "chapter": "Chương 2: Các điều kiện thương mại quốc tế (Incoterms)",
+    "tags": ["incoterms", "fob", "giao lên tàu", "boong tàu", "rủi ro"],
+    "citation": "Giáo trình Giao dịch thương mại quốc tế - Chương 2, Trang 88",
+    "textbook": "Giáo trình Giao dịch thương mại quốc tế",
+    "page": "88",
+    "content": "FOB (Free on Board - Giao lên tàu) là một trong những điều kiện Incoterms 2020 phổ biến nhất, chỉ áp dụng cho vận tải đường biển và đường thủy nội địa. Theo điều kiện FOB, người bán hoàn thành nghĩa vụ giao hàng khi hàng hóa đã được đặt an toàn trên boong tàu do người mua chỉ định tại cảng bốc hàng quy định. Kể từ thời điểm này, mọi rủi ro về mất mát hoặc hư hỏng của hàng hóa cũng như các chi phí phát sinh được chuyển hoàn toàn sang người mua. Người bán có nghĩa vụ thông quan xuất khẩu, còn người mua chịu trách nhiệm thuê phương tiện vận chuyển và thông quan nhập khẩu."
+  },
+  {
+    "subjectCode": "15635",
+    "chapter": "Chương 2: Các điều kiện thương mại quốc tế (Incoterms)",
+    "tags": ["incoterms", "cif", "bảo hiểm", "cước phí", "cảng đích"],
+    "citation": "Giáo trình Giao dịch thương mại quốc tế - Chương 2, Trang 95",
+    "textbook": "Giáo trình Giao dịch thương mại quốc tế",
+    "page": "95",
+    "content": "CIF (Cost, Insurance and Freight - Tiền hàng, bảo hiểm và cước phí) quy định người bán giao hàng lên tàu hoặc mua lại hàng hóa đã được giao như vậy. Mặc dù rủi ro được chuyển sang người mua khi hàng hóa nằm trên boong tàu cảng bốc hàng (tương tự FOB), người bán lại có nghĩa vụ phải ký hợp đồng vận chuyển và chi trả toàn bộ cước phí cùng chi phí phát sinh để đưa hàng đến cảng đích chỉ định. Ngoài ra, người bán bắt buộc phải mua bảo hiểm hàng hải cho người mua ở mức bảo hiểm tối thiểu (Mức C theo Viện những người bảo hiểm Luân Đôn - Institute Cargo Clauses). Chỉ áp dụng cho đường biển/đường thủy."
+  },
+  {
+    "subjectCode": "15635",
+    "chapter": "Chương 4: Hợp đồng mua bán ngoại thương",
+    "tags": ["hợp đồng", "bất khả kháng", "force majeure", "miễn trách nhiệm"],
+    "citation": "Giáo trình Giao dịch thương mại quốc tế - Chương 4, Trang 156",
+    "textbook": "Giáo trình Giao dịch thương mại quốc tế",
+    "page": "156",
+    "content": "Điều khoản Bất khả kháng (Force Majeure Clause) trong hợp đồng mua bán ngoại thương quy định các sự kiện khách quan, không thể lường trước, không thể khắc phục và nằm ngoài tầm kiểm soát của các bên (như thiên tai, chiến tranh, dịch bệnh, lệnh cấm của chính phủ) dẫn đến việc một bên không thể thực hiện nghĩa vụ hợp đồng. Khi xảy ra bất khả kháng, bên bị ảnh hưởng sẽ được miễn trách nhiệm đối với việc chậm thực hiện hoặc không thực hiện nghĩa vụ hợp đồng, với điều kiện phải thông báo kịp thời cho bên kia bằng văn bản và xuất trình chứng nhận hợp lệ từ cơ quan thẩm quyền (ví dụ: Phòng Thương mại)."
+  },
+  {
+    "subjectCode": "15635",
+    "chapter": "Chương 6: Khiếu nại và Giải quyết tranh chấp ngoại thương",
+    "tags": ["tranh chấp", "khiếu nại", "trọng tài", "phán quyết", "arbitration"],
+    "citation": "Giáo trình Giao dịch thương mại quốc tế - Chương 6, Trang 230",
+    "textbook": "Giáo trình Giao dịch thương mại quốc tế",
+    "page": "230",
+    "content": "Trọng tài thương mại quốc tế (International Commercial Arbitration) là phương thức giải quyết tranh chấp phổ biến và được ưa chuộng hàng đầu trong kinh doanh quốc tế thay vì tòa án. Quyết định trọng tài (phán quyết) mang tính chung thẩm, có giá trị bắt buộc thi hành đối với các bên và không thể bị kháng cáo. Theo Công ước New York năm 1958, phán quyết của trọng tài nước ngoài được công nhận và cho thi hành tại hơn 160 quốc gia thành viên. Trọng tài bảo đảm tính bảo mật cao, thủ tục linh hoạt, nhanh chóng và các bên có quyền thỏa thuận lựa chọn luật áp dụng, ngôn ngữ cũng như trọng tài viên."
+  },
+  {
+    "subjectCode": "15648",
+    "chapter": "Chương 4: Phương thức tín dụng chứng từ (L/C)",
+    "tags": ["l/c", "tín dụng chứng từ", "letter of credit", "ngân hàng phát hành", "bộ chứng từ"],
+    "citation": "Giáo trình Thanh toán quốc tế - Chương 4, Trang 112",
+    "textbook": "Giáo trình Thanh toán quốc tế",
+    "page": "112",
+    "content": "Thư tín dụng L/C (Letter of Credit) là cam kết thanh toán vô điều kiện bằng văn bản của Ngân hàng phát hành (Issuing Bank) gửi cho Người thụ hưởng (Beneficiary), cam kết trả tiền hoặc chấp nhận hối phiếu cho người thụ hưởng nếu xuất trình bộ chứng từ hoàn toàn phù hợp với các điều kiện quy định trong thư tín dụng. L/C là phương thức thanh toán an toàn nhất cho người bán vì rủi ro không thanh toán được chuyển từ người mua sang một tổ chức tài chính uy tín là ngân hàng. Mọi giao dịch L/C đều dựa trên chứng từ chứ không dựa trên hàng hóa thực tế."
+  },
+  {
+    "subjectCode": "15648",
+    "chapter": "Chương 4: Phương thức tín dụng chứng từ (L/C)",
+    "tags": ["ucp 600", "quy tắc", "thời gian kiểm tra", "5 ngày", "điều 14"],
+    "citation": "Giáo trình Thanh toán quốc tế - Chương 4, Trang 124",
+    "textbook": "Giáo trình Thanh toán quốc tế",
+    "page": "124",
+    "content": "UCP 600 (Quy tắc thực hành thống nhất về Tín dụng chứng từ) là bộ quy tắc do Phòng Thương mại Quốc tế (ICC) ban hành, điều chỉnh hầu hết các giao dịch tín dụng chứng từ trên toàn cầu. Điều 14 UCP 600 quy định rõ Ngân hàng phát hành, Ngân hàng xác nhận và Ngân hàng được chỉ định có tối đa 5 ngày làm việc (five banking days) tiếp sau ngày xuất trình bộ chứng từ để kiểm tra và quyết định xem chứng từ có phù hợp hay không. Quy tắc này tạo ra sự ổn định và tránh việc các ngân hàng trì hoãn thanh toán vô căn cứ."
+  },
+  {
+    "subjectCode": "15648",
+    "chapter": "Chương 3: Phương thức Nhờ thu (Collection)",
+    "tags": ["nhờ thu", "collection", "d/p", "d/a", "urc 522"],
+    "citation": "Giáo trình Thanh toán quốc tế - Chương 3, Trang 92",
+    "textbook": "Giáo trình Thanh toán quốc tế",
+    "page": "92",
+    "content": "Phương thức nhờ thu (Collection) là phương thức thanh toán trong đó người xuất khẩu sau khi giao hàng sẽ lập bộ chứng từ thương mại (và hối phiếu) nhờ ngân hàng của mình thu hộ tiền từ người nhập khẩu. Nhờ thu bao gồm nhờ thu trả tiền đổi chứng từ (D/P - Documents against Payment) bắt buộc người mua trả tiền ngay mới được giao chứng từ đi nhận hàng, và nhờ thu chấp nhận thanh toán đổi chứng từ (D/A - Documents against Acceptance) cho phép người mua ký chấp nhận hối phiếu hẹn ngày thanh toán trong tương lai để lấy chứng từ trước. Quy tắc áp dụng phổ biến là URC 522."
+  },
+  {
+    "subjectCode": "15648",
+    "chapter": "Chương 2: Chuyển tiền bằng điện (T/T)",
+    "tags": ["chuyển tiền", "t/t", "telegraphic transfer", "ngân hàng"],
+    "citation": "Giáo trình Thanh toán quốc tế - Chương 2, Trang 54",
+    "textbook": "Giáo trình Thanh toán quốc tế",
+    "page": "54",
+    "content": "Chuyển tiền bằng điện (T/T - Telegraphic Transfer) là phương thức thanh toán đơn giản nhất, trong đó người mua (nhập khẩu) yêu cầu ngân hàng phục vụ mình chuyển một số tiền nhất định qua mạng viễn thông tài chính (SWIFT) cho người hưởng lợi (người xuất khẩu) ở nước ngoài tại một ngân hàng chỉ định. T/T có hai dạng: T/T trả trước (rủi ro cao cho người mua vì chuyển tiền trước khi nhận hàng) và T/T trả sau (rủi ro cao cho người bán vì giao hàng trước khi nhận tiền). Tốc độ xử lý cực kỳ nhanh chóng và chi phí giao dịch thấp."
+  },
+  {
+    "subjectCode": "15625",
+    "chapter": "Chương 3: Vận đơn đường biển (Bill of Lading)",
+    "tags": ["vận đơn", "b/l", "bill of lading", "chức năng", "sở hữu", "ký hậu"],
+    "citation": "Giáo trình Giao nhận vận tải quốc tế - Chương 3, Trang 120",
+    "textbook": "Giáo trình Giao nhận vận tải quốc tế",
+    "page": "120",
+    "content": "Vận đơn đường biển (Bill of Lading - B/L) là chứng từ vận tải cốt lõi do người chuyên chở (hãng tàu) hoặc đại lý phát hành cho người gửi hàng (Shipper). B/L có ba chức năng pháp lý tối thượng: Thứ nhất, là biên nhận đã nhận hàng lên tàu của hãng tàu. Thứ hai, là bằng chứng của hợp đồng vận chuyển đường biển. Thứ ba, là chứng từ sở hữu hàng hóa (Document of Title). Nhờ chức năng sở hữu hàng hóa, vận đơn theo lệnh (To Order B/L) có thể mua bán và chuyển nhượng sở hữu hàng hóa dọc đường thông qua việc ký hậu (endorsement) mặt sau tờ vận đơn gốc."
+  },
+  {
+    "subjectCode": "15625",
+    "chapter": "Chương 3: Vận đơn đường biển (Bill of Lading)",
+    "tags": ["master b/l", "house b/l", "vận đơn nhà", "vận đơn chủ", "forwarder"],
+    "citation": "Giáo trình Giao nhận vận tải quốc tế - Chương 3, Trang 128",
+    "textbook": "Giáo trình Giao nhận vận tải quốc tế",
+    "page": "128",
+    "content": "Trong nghiệp vụ giao nhận gom hàng (LCL), có sự phân biệt rõ ràng giữa Master Bill of Lading (MBL - Vận đơn chủ) và House Bill of Lading (HBL - Vận đơn nhà). Master B/L do hãng tàu thực tế phát hành cho người gom hàng (Freight Forwarder), trên đó người gửi hàng là Forwarder cảng đi và người nhận hàng là đại lý của Forwarder tại cảng đích. House B/L do chính Forwarder phát hành cho chủ hàng thực tế (Actual Shipper), trên đó ghi rõ tên người gửi hàng và người nhận hàng thực sự. Khi nhận hàng tại cảng đích, người nhận hàng phải đổi HBL lấy D/O thông qua đại lý Forwarder."
+  },
+  {
+    "subjectCode": "15625",
+    "chapter": "Chương 4: Quy trình Giao nhận Container FCL và LCL",
+    "tags": ["fcl", "lcl", "container", "bãi container", "cy", "cfs"],
+    "citation": "Giáo trình Giao nhận vận tải quốc tế - Chương 4, Trang 164",
+    "textbook": "Giáo trình Giao nhận vận tải quốc tế",
+    "page": "164",
+    "content": "Quy trình giao nhận hàng container được chia làm hai loại: Nguyên container (FCL - Full Container Load) và Hàng lẻ gom container (LCL - Less than Container Load). Với hàng FCL, người gửi hàng chịu trách nhiệm đóng hàng vào container, kẹp chì (seal) và giao container nguyên vẹn cho hãng tàu tại Bãi container (CY - Container Yard). Với hàng LCL, người gửi hàng giao lượng hàng lẻ của mình tại Kho khai thác hàng lẻ (CFS - Container Freight Station); tại đây người gom hàng sẽ phân loại, đóng chung nhiều lô hàng lẻ của nhiều chủ hàng khác nhau vào cùng một container để xuất khẩu."
+  },
+  {
+    "subjectCode": "15818",
+    "chapter": "Chương 1: Tổng quan về Logistics và Chuỗi cung ứng",
+    "tags": ["logistics", "chuỗi cung ứng", "supply chain", "phân phối", "dịch vụ khách hàng"],
+    "citation": "Giáo trình Quản trị Logistics & Chuỗi cung ứng - Chương 1, Trang 25",
+    "textbook": "Giáo trình Quản trị Logistics & Chuỗi cung ứng",
+    "page": "25",
+    "content": "Quản trị Logistics là một phần của quản trị chuỗi cung ứng bao gồm việc hoạch định, thực hiện và kiểm soát dòng dịch chuyển hiệu quả, lưu trữ hàng hóa, dịch vụ và thông tin liên quan từ điểm khởi đầu đến điểm tiêu dùng nhằm thỏa mãn yêu cầu của khách hàng. Chuỗi cung ứng rộng hơn, bao hàm toàn bộ mạng lưới các tổ chức liên kết ngược và liên kết xuôi từ nhà cung cấp nguyên liệu thô đầu tiên đến người tiêu dùng cuối cùng, hợp tác chia sẻ thông tin và tài chính để tối ưu hóa giá trị toàn hệ thống."
+  },
+  {
+    "subjectCode": "15818",
+    "chapter": "Chương 4: Quản trị Tồn kho và Mô hình EOQ",
+    "tags": ["tồn kho", "eoq", "mô hình", "kinh tế", "chi phí đặt hàng", "chi phí lưu kho"],
+    "citation": "Giáo trình Quản trị Logistics & Chuỗi cung ứng - Chương 4, Trang 118",
+    "textbook": "Giáo trình Quản trị Logistics & Chuỗi cung ứng",
+    "page": "118",
+    "content": "Mô hình lượng đặt hàng hiệu quả kinh tế EOQ (Economic Order Quantity) nhằm mục đích xác định quy mô đặt hàng tối ưu sao cho tổng chi phí quản trị tồn kho hàng năm là thấp nhất. Tổng chi phí tồn kho gồm chi phí đặt hàng (setup cost) và chi phí lưu kho (holding cost). Công thức tính lượng đặt hàng tối ưu là EOQ = căn bậc hai của (2 * D * S / H), trong đó D là nhu cầu hàng năm, S là chi phí cho mỗi lần đặt hàng, và H là chi phí lưu trữ một đơn vị hàng tồn kho mỗi năm. Tại điểm EOQ, chi phí đặt hàng bằng chi phí lưu kho."
+  },
+  {
+    "subjectCode": "15818",
+    "chapter": "Chương 6: Dịch vụ Logistics bên thứ ba (3PL, 4PL)",
+    "tags": ["3pl", "4pl", "outsource", "nhà cung cấp dịch vụ"],
+    "citation": "Giáo trình Quản trị Logistics & Chuỗi cung ứng - Chương 6, Trang 190",
+    "textbook": "Giáo trình Quản trị Logistics & Chuỗi cung ứng",
+    "page": "190",
+    "content": "Dịch vụ logistics bên thứ ba (3PL - Third-Party Logistics) là việc doanh nghiệp thuê ngoài một phần hoặc toàn bộ các hoạt động logistics (như vận tải, lưu kho) cho một công ty cung cấp dịch vụ chuyên nghiệp độc lập. Công ty 3PL tập trung thực thi tác nghiệp vật lý. Ngược lại, nhà cung cấp logistics bên thứ tư (4PL - Fourth-Party Logistics) đóng vai trò là nhà tích hợp chuỗi cung ứng, quản lý và điều phối toàn bộ tài nguyên, năng lực công nghệ của chính mình với các nhà cung cấp khác (bao gồm cả 3PL) nhằm cung cấp giải pháp chuỗi cung ứng toàn diện."
+  }
+]

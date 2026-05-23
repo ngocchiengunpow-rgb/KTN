@@ -1,0 +1,19 @@
+{
+  "name": "VimEdu - Kinh tế Ngoại thương VMU",
+  "short_name": "VimEdu",
+  "description": "Nền tảng hỗ trợ học tập trực tuyến dành riêng cho sinh viên ngành Kinh tế Ngoại thương - Đại học Hàng Hải Việt Nam",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a192f",
+  "theme_color": "#1b365d",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

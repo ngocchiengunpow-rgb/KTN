@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VimEdu – KTNT Learning Platform | ĐH Hàng Hải Việt Nam</title>
+  
+  <!-- Favicon / Meta -->
+  <meta name="description" content="Nền tảng hỗ trợ học tập trực tuyến dành riêng cho sinh viên ngành Kinh tế Ngoại thương - Khoa Kinh tế - Trường Đại học Hàng Hải Việt Nam (VMU)">
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#1b365d">
+
+  <!-- Core and Module Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/subject.css">
+  <link rel="stylesheet" href="css/forum.css">
+  <link rel="stylesheet" href="css/leaderboard.css">
+  <link rel="stylesheet" href="css/documents.css">
+  <link rel="stylesheet" href="css/news_research.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- Toast Alert Manager Container -->
+  <div id="toast-container"></div>
+
+  <!-- AUTHENTICATION VIEW SECTION (Shown when logged out) -->
+  <div id="auth-layout" style="display: none;">
+    <div class="auth-container">
+      
+      <!-- LOGIN CARD -->
+      <div id="login-card" class="glass-card auth-card animated-fade">
+        <div class="auth-header">
+          <img class="auth-logo" src="assets/logo.svg" alt="VimEdu Logo">
+          <h2 class="auth-title">Đăng Nhập Hệ Thống</h2>
+          <p class="auth-subtitle">Cổng hỗ trợ học tập Kinh tế Ngoại thương - VMU</p>
+        </div>
+        <form id="login-form" class="auth-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="login-msv">Mã Sinh Viên (MSV)</label>
+            <input class="form-input" type="text" id="login-msv" placeholder="Nhập MSV của bạn (e.g. 75128, admin...)" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="login-password">Mật khẩu</label>
+            <input class="form-input" type="password" id="login-password" placeholder="Nhập mật khẩu" required>
+          </div>
+          <div class="form-group-checkbox">
+            <label class="checkbox-label">
+              <input type="checkbox" id="login-remember"> Ghi nhớ đăng nhập
+            </label>
+            <a href="#" class="forgot-password-link" id="go-forgot">Quên mật khẩu?</a>
+          </div>
+          <button type="submit" class="btn btn-primary auth-btn">Đăng Nhập</button>
+        </form>
+        <div class="auth-footer">
+          Chưa có tài khoản? <a href="#" id="go-register">Đăng ký ngay</a>
+        </div>
+      </div>
+
+      <!-- REGISTER CARD -->
+      <div id="register-card" class="glass-card auth-card animated-fade" style="display: none;">
+        <div class="auth-header">
+          <img class="auth-logo" src="assets/logo.svg" alt="VimEdu Logo">
+          <h2 class="auth-title">Đăng Ký Tài Khoản</h2>
+          <p class="auth-subtitle">Tạo tài khoản hỗ trợ học tập mới</p>
+        </div>
+        <form id="register-form" class="auth-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="reg-msv">Mã Sinh Viên (MSV) *</label>
+            <input class="form-input" type="text" id="reg-msv" placeholder="Nhập mã sinh viên (phải duy nhất)" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-name">Họ và Tên đầy đủ *</label>
+            <input class="form-input" type="text" id="reg-name" placeholder="Nhập đầy đủ họ tên" required>
+          </div>
+          <div class="auth-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="reg-email">Email trường / Cá nhân *</label>
+              <input class="form-input" type="email" id="reg-email" placeholder="e.g. msv@student.vimaru.edu.vn" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="reg-cohort">Khóa / Niên học *</label>
+              <select class="form-select" id="reg-cohort" required>
+                <option value="K66">Khóa K66 (Mới nhất)</option>
+                <option value="K65">Khóa K65</option>
+                <option value="K64">Khóa K64</option>
+                <option value="K63">Khóa K63</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-password">Mật khẩu *</label>
+            <input class="form-input" type="password" id="reg-password" placeholder="Tối thiểu 8 ký tự" required>
+          </div>
+          <button type="submit" class="btn btn-primary auth-btn">Kích hoạt & Đăng ký</button>
+        </form>
+        <div class="auth-footer">
+          Đã có tài khoản? <a href="#" id="go-login">Đăng nhập</a>
+        </div>
+      </div>
+
+      <!-- FORGOT PASSWORD CARD -->
+      <div id="forgot-card" class="glass-card auth-card animated-fade" style="display: none;">
+        <div class="auth-header">
+          <img class="auth-logo" src="assets/logo.svg" alt="VimEdu Logo">
+          <h2 class="auth-title">Khôi Phục Mật Khẩu</h2>
+          <p class="auth-subtitle">Gửi hướng dẫn thiết lập lại mật khẩu</p>
+        </div>
+        <form id="forgot-form" class="auth-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label" for="forgot-msv">Mã Sinh Viên (MSV)</label>
+            <input class="form-input" type="text" id="forgot-msv" placeholder="Nhập MSV đã đăng ký" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="forgot-email">Email liên kết</label>
+            <input class="form-input" type="email" id="forgot-email" placeholder="Nhập email đã liên kết" required>
+          </div>
+          <button type="submit" class="btn btn-primary auth-btn">Gửi link đặt lại mật khẩu</button>
+        </form>
+        <div class="auth-footer">
+          Quay lại <a href="#" id="forgot-back-login">Đăng nhập</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- MAIN SYSTEM APPLICATION VIEW SECTION (Shown when logged in) -->
+  <div id="app-layout" style="display: none;">
+    
+    <!-- SIDEBAR NAVIGATION PANEL -->
+    <aside id="sidebar">
+      <div class="sidebar-logo">
+        <img src="assets/logo.svg" alt="VimEdu Logo">
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item" data-page="dashboard">
+          <a href="#/dashboard">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></svg>
+            Bảng tiến độ
+          </a>
+        </li>
+        <li class="nav-item" data-page="subjects">
+          <a href="#/subjects">
+            <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M4 19.5A2.5 2.5 0 0 0 6.5 22H20M4 19.5L4 4.5A2.5 2.5 0 0 1 6.5 2H20v20H6.5M6 6h10M6 10h10"/></svg>
+            Học phần 8 kỳ
+          </a>
+        </li>
+        <li class="nav-item" data-page="forum">
+          <a href="#/forum">
+            <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Diễn đàn thảo luận
+          </a>
+        </li>
+        <li class="nav-item" data-page="leaderboard">
+          <a href="#/leaderboard">
+            <svg viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18M4 22h16M10 14.66V17c0 .55-.45 1-1 1H4v2h16v-2h-5c-.55 0-1-.45-1-1v-2.34M12 2a4 4 0 0 1 4 4v6a4 4 0 0 1-8 0V6a4 4 0 0 1 4-4z"/></svg>
+            Bảng xếp hạng
+          </a>
+        </li>
+        <li class="nav-item" data-page="documents">
+          <a href="#/documents">
+            <svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+            Kho tài liệu &amp; Studocu
+          </a>
+        </li>
+        <li class="nav-item" data-page="news">
+          <a href="#/news">
+            <svg viewBox="0 0 24 24"><path d="M19 20H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h10l5 5v9a2 2 0 0 1-2 2z"/><path d="M12 11h4M12 15h4M8 11h2M8 15h2"/></svg>
+            Tin tức &amp; NCKH
+          </a>
+        </li>
+        
+        <!-- ADMIN/TEACHER Persisted Menus (shown dynamically) -->
+        <li class="nav-item" data-page="admin" id="sidebar-admin-link" style="display: none;">
+          <a href="#/admin">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            Quản trị viên
+          </a>
+        </li>
+      </ul>
+
+      <!-- Current User Sidebar Footer info -->
+      <div class="sidebar-footer">
+        <div class="user-avatar-container">
+          <img class="user-avatar" id="sidebar-avatar" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=100" alt="Avatar">
+          <span class="xp-badge-mini" id="sidebar-xp-mini">0 XP</span>
+        </div>
+        <div class="user-info-sidebar">
+          <span class="user-name-sidebar" id="sidebar-fullname">Đỗ Tuấn Kiệt</span>
+          <span class="user-role-sidebar" id="sidebar-cohort">K64</span>
+        </div>
+        <button class="btn-logout-sidebar" id="sidebar-logout" title="Đăng xuất">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
+        </button>
+      </div>
+    </aside>
+
+    <!-- SYSTEM MAIN DISPLAY PANEL AREA -->
+    <main id="main-content">
+      
+      <!-- PERSISTENT TOP APP BAR HEADER -->
+      <header class="app-header">
+        <div class="page-title-box">
+          <h1 id="view-title">Bảng Tiến Độ Học Tập</h1>
+          <p id="view-subtitle">Tổng quan học trình ngành Kinh tế Ngoại thương</p>
+        </div>
+        <div class="header-actions">
+          
+          <!-- Online/Offline Connection Badge -->
+          <div class="connection-badge" id="connection-status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">Đang kết nối...</span>
+          </div>
+
+          <!-- Theme Light/Dark switch -->
+          <button class="theme-toggle-btn" id="theme-toggle" title="Đổi chủ đề Sáng/Tối">
+            <svg id="theme-icon" viewBox="0 0 24 24"><path d="M12 3v1M12 20v1M4.22 4.22l.7.7M18.36 18.36l.7.7M1 12h1M20 12h1M4.22 19.78l.7-.7M18.36 5.64l.7-.7M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/></svg>
+          </button>
+          
+          <!-- Active system alerts trigger -->
+          <div style="position: relative;">
+            <button class="notif-btn" id="notif-bell" title="Thông báo hệ thống">
+              <svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+              <span class="notif-badge" id="notif-bell-badge" style="display: none;"></span>
+            </button>
+            
+            <!-- Notifications Popover Card -->
+            <div class="notif-dropdown" id="notif-dropdown-box">
+              <div class="notif-header">
+                <h4>Thông báo mới</h4>
+                <button class="btn-secondary" style="font-size: 10px; padding: 4px 8px;" id="notif-mark-read">Đọc tất cả</button>
+              </div>
+              <ul class="notif-list" id="notif-list-view">
+                <li class="notif-item unread">
+                  <div class="notif-item-title">Hệ thống VimEdu kích hoạt</div>
+                  <div class="notif-item-desc">Chào mừng bạn đã đăng nhập nền tảng hỗ trợ học tập ngành Ngoại thương.</div>
+                  <div class="notif-item-time">Vừa xong</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </header>
+
+      <!-- ACTIVE SCREEN DISPLAY OUTLET PANEL -->
+      <div id="screen-outlet" class="animated-fade">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+      
+    </main>
+  </div>
+
+  <!-- Browser Module Bootstrap -->
+  <script type="module" src="js/app.js"></script>
+
+  <!-- Service Worker Registration -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+          .then((reg) => {
+            console.log('[PWA] Service Worker registered successfully with scope:', reg.scope);
+          })
+          .catch((err) => {
+            console.error('[PWA] Service Worker registration failed:', err);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
